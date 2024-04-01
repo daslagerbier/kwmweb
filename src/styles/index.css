@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer components {
+  input[type="checkbox"]:checked~label span svg {
+    @apply inline-flex;
+  }
+
+  .sticky .header-logo {
+    @apply py-5 lg:py-2;
+  }
+
+  .sticky .menu-scroll.active {
+    @apply opacity-70;
+  }
+
+  input#togglePlan:checked~.dot {
+    @apply translate-x-full;
+  }
+
+  input#checkboxLabel:checked~.box span {
+    @apply opacity-100;
+  }
+}
+
+/** @format */
+
+.hero_container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+video {
+  width: 100%;
+  transform: translate(0, -6vh);
+  /*   width: 100vw;
+  height: 100vh;
+  object-fit: cover; */
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: absolute;
+  top: 0;
+  color: #f1f1f1;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.sub-content {
+  text-align: center;
+}
+
+.sub-content h1 {
+  color: #ffff;
+  font-size: 1.3rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sub-content p {
+  color: #eee;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.sub-content button {
+  font-weight: bold;
+  color: #f1f1f1;
+  border: #f1f1f1 1px solid;
+  padding: 10px 5px;
+  background-color: hsla(0, 0%, 0%, 0);
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.sub-content button:hover {
+  background-color: #f1f1f1;
+  color: #000000c0;
+}
+
+.sub-content img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero_container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: absolute;
+    top: 0;
+    color: #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .sub-content {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .sub-content h1 {
+    color: #ffff;
+    font-size: 1.7rem;
+  }
+
+  .sub-content p {
+    color: #efefef;
+    font-size: 1.3rem;
+    margin: 10px 0 !important;
+  }
+
+  .sub-content button {
+    font-weight: bold;
+    margin-top: 5px;
+    color: #f1f1f1;
+    border: #f1f1f1 1px solid;
+    padding: 10px 5px;
+    background-color: hsla(0, 0%, 0%, 0);
+    font-size: 1.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .sub-content button:hover {
+    background-color: #f1f1f1;
+    color: #000000c0;
+  }
+
+  .sub-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    border: #f1f1f1 1px solid;
+    opacity: 0.4;
+  }
+}
+
+html {
+  width: 100%;
+  padding: 0;
+}
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
