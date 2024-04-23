@@ -191,3 +191,6 @@ html {
 ::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(255, 255, 255, 0.3);
 }
+.navbar {
+  z-index: 1000; /* Lower than the overlay's zIndex */
+}
