@@ -15,6 +15,7 @@ import VisionSection from "@/components/Vision";
 import { Metadata } from "next";
 import LogoScroll from "./references";
 
+
 export const metadata: Metadata = {
   title: "Innovation meets Sustainability for a better Garment",
   description: "KWM",
@@ -23,15 +24,15 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
-      <ScrollUp />
-      <Hero />
-      <VisionSection />
-      <App />
-      <Sustainability />
-      <Features />
-      <LogoScroll/>
-      <Contact />
-    </>
+      <>
+        <ScrollUp />
+        <Hero />
+        <VisionSection />
+        <App />
+        <Sustainability />
+        <Features />
+        <LogoScroll />
+        <Contact />
+      </>
   );
 }

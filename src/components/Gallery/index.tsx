@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
-import { Carousel } from "antd";
+import { Carousel, Button } from "antd";
 import Img1 from "/public/images/gallery/Img-1.jpg";
+import { LeftOutlined, RightOutlined } from '@ant-design/icons';
+
 
 const contentStyle: React.CSSProperties = {
   margin: 0,
@@ -17,25 +19,35 @@ const App: React.FC = () => {
     console.log(currentSlide);
   };
 
+  // const prevArrow = (
+  //   <Button type="primary" shape="circle" icon={<LeftOutlined />} style={{fontSize:'60px', top: '50%', left: '20px', transform: 'translateY(-50%)' }}/>
+  // );
+
+  // const nextArrow = (
+  //   <Button type="primary" shape="circle" icon={<RightOutlined />} style={{fontSize:'60px', top: '50%', right: '20px',transform: 'translateY(-50%)' }} />
+  // );
+
   return (
-    <Carousel afterChange={onChange}>
+    <Carousel autoplay arrows={true} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
       <div>
         <img
-          className="h-auto max-w-full"
+          className="h-screen w-screen object-cover"
           src="/images/gallery/Img-2.jpg"
           alt="Image"
         />
       </div>
       <div>
         <img
-          className="h-auto max-w-full"
+          className="h-screen w-screen object-cover"
+          // className="max-h-800 max-w-full"
           src="/images/gallery/Img-3.jpg"
           alt="Image"
         />
       </div>
       <div>
         <img
-          className="h-auto max-w-full"
+          className="h-screen w-screen object-cover"
+          // className="max-h-800 max-w-full"
           src="/images/gallery/Img-4.jpg"
           alt="Image"
         />

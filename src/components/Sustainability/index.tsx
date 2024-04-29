@@ -55,7 +55,7 @@ const Sustainability = () => {
   };
 
   return (
-    <div className="relative w-full h-auto">
+    <div id='sustainability' className="relative w-full h-auto">
       <img
         className="w-full h-auto object-cover"
         src="/images/gallery/Img-2.jpg"
@@ -68,6 +68,7 @@ const Sustainability = () => {
           onMouseEnter={() => setHoveredText('Text 1')}
           onMouseLeave={() => setHoveredText('')}
           onClick={() => showModal(getOverlayContent('Text 1'))}
+          style={{ fontFamily: 'Inknut Antiqua, serif', fontWeight: 300 }}
         >
           CARBON FOOTPRINT REDUCTION
         </div>
@@ -76,6 +77,7 @@ const Sustainability = () => {
           onMouseEnter={() => setHoveredText('Text 2')}
           onMouseLeave={() => setHoveredText('')}
           onClick={() => showModal(getOverlayContent('Text 2'))}
+          style={{ fontFamily: 'Inknut Antiqua, serif', fontWeight: 300 }}
         >
           WASTE REDUCTION
         </div>
@@ -84,6 +86,7 @@ const Sustainability = () => {
           onMouseEnter={() => setHoveredText('Text 3')}
           onMouseLeave={() => setHoveredText('')}
           onClick={() => showModal(getOverlayContent('Text 3'))}
+          style={{ fontFamily: 'Inknut Antiqua, serif', fontWeight: 300 }}
         >
           ECO FRIENDLY MATERIALS
         </div>
@@ -92,6 +95,7 @@ const Sustainability = () => {
           onMouseEnter={() => setHoveredText('Text 3')}
           onMouseLeave={() => setHoveredText('')}
           onClick={() => showModal(getOverlayContent('Text 4'))}
+          style={{ fontFamily: 'Inknut Antiqua, serif', fontWeight: 300 }}
         >
           ETHICAL MANUFACTURING
         </div>
