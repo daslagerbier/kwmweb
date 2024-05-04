@@ -3,14 +3,13 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <>
-      <section
-      >
+      <section>
         <div className="hero_container">
           <video autoPlay muted loop>
             <source src="/videos/videohero.mp4" type="video/mp4" />
           </video>
         </div>
-        <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
+        {/* <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
             height="556"
@@ -250,7 +249,7 @@ const Hero = () => {
               </radialGradient>
             </defs>
           </svg>
-        </div>
+        </div> */}
       </section>
     </>
   );
