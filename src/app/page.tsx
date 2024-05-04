@@ -14,6 +14,7 @@ import Video from "@/components/Video";
 import VisionSection from "@/components/Vision";
 import { Metadata } from "next";
 import LogoScroll from "./references";
+import Team from "@/components/Team";
 
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export default function Home() {
         <App />
         <Sustainability />
         <Features />
+        <Team />
         <LogoScroll />
         <Contact />
       </>
