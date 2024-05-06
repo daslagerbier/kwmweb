@@ -1,26 +1,4 @@
  "use client"
-// import React from 'react';
-// import { Typography, Flex, Row, Space } from 'antd';
-// import Title from 'antd/es/typography/Title';
-
-// const Sustainability: React.FC = () => (
-//   <>
-//   <div style={{ backgroundImage: "url(/images/gallery/Img-2.jpg)", paddingTop:300}}>
-//       <Flex vertical justify='flex-end' align='flex-start' >
-
-//         <h1 style={{fontSize: '8vw'}}>Text placeholder</h1>
-//         <h1 style={{fontSize: '8vw'}}>Text placeholder</h1>
-//         <h1 style={{fontSize: '8vw'}}>Text placeholder</h1>
-//         <h1 style={{fontSize: '8vw'}}>Text placeholder</h1>
-
-        
-        
-//         </Flex>
-//         </div>
-//   </>
-// );
-
-// export default Sustainability;
 import { useState } from 'react';
 import { Modal } from 'antd';
 
@@ -28,6 +6,8 @@ const Sustainability = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [hoveredText, setHoveredText] = useState('');
   const [overlayContent, setOverlayContent] = useState('');
+
+  const [classImg1,setClassImg1] =useState("sustainability-img1")
 
   const showModal = (content) => {
     setIsModalVisible(true);
@@ -55,18 +35,19 @@ const Sustainability = () => {
   };
 
   return (
-    <div id='sustainability' className="relative w-full h-auto">
-      <img
-        className="w-full h-auto object-cover"
-        src="/images/gallery/Img-2.jpg"
-        alt="Background"
-      />
+    <div id='sustainability' className={"relative w-full h-auto sustainability "+classImg1 } >
+
       <div className="absolute bottom-0 left-0 p-8">
       <div className="grid gap-4">
         <div
           className="relative cursor-pointer text-white text-6xl font-bold transition duration-300 hover:text-red-500"
-          onMouseEnter={() => setHoveredText('Text 1')}
-          onMouseLeave={() => setHoveredText('')}
+          onMouseEnter={() => 
+            setClassImg1("sustainability-img2") 
+           }
+           onMouseLeave={() => 
+            setClassImg1("sustainability-img1") 
+           }
+
           onClick={() => showModal(getOverlayContent('Text 1'))}
           style={{ fontFamily: 'Inknut Antiqua, serif', fontWeight: 300 }}
         >
@@ -74,8 +55,12 @@ const Sustainability = () => {
         </div>
         <div
           className="relative cursor-pointer text-white text-6xl font-bold transition duration-300 hover:text-red-500"
-          onMouseEnter={() => setHoveredText('Text 2')}
-          onMouseLeave={() => setHoveredText('')}
+          onMouseEnter={() => 
+            setClassImg1("sustainability-img3") 
+           }
+           onMouseLeave={() => 
+            setClassImg1("sustainability-img1") 
+           }
           onClick={() => showModal(getOverlayContent('Text 2'))}
           style={{ fontFamily: 'Inknut Antiqua, serif', fontWeight: 300 }}
         >
@@ -83,8 +68,12 @@ const Sustainability = () => {
         </div>
         <div
           className="relative cursor-pointer text-white text-6xl font-bold transition duration-300 hover:text-red-500"
-          onMouseEnter={() => setHoveredText('Text 3')}
-          onMouseLeave={() => setHoveredText('')}
+          onMouseEnter={() => 
+            setClassImg1("sustainability-img4") 
+           }
+           onMouseLeave={() => 
+            setClassImg1("sustainability-img1") 
+           }
           onClick={() => showModal(getOverlayContent('Text 3'))}
           style={{ fontFamily: 'Inknut Antiqua, serif', fontWeight: 300 }}
         >
@@ -92,8 +81,14 @@ const Sustainability = () => {
         </div>
         <div
           className="relative cursor-pointer text-white text-6xl font-bold transition duration-300 hover:text-red-500"
-          onMouseEnter={() => setHoveredText('Text 3')}
-          onMouseLeave={() => setHoveredText('')}
+           onMouseEnter={() => 
+            setClassImg1("sustainability-img2") 
+           }
+           onMouseLeave={() => 
+            setClassImg1("sustainability-img1") 
+           }
+          
+
           onClick={() => showModal(getOverlayContent('Text 4'))}
           style={{ fontFamily: 'Inknut Antiqua, serif', fontWeight: 300 }}
         >
@@ -102,15 +97,19 @@ const Sustainability = () => {
         </div>
       </div>
       <Modal
+        width={"50vw"}
         title={hoveredText}
         open={isModalVisible}
         onCancel={handleCancel}
         footer={null}
         centered
-  style={{ borderRadius: 0, position: 'fixed', top: 0, right: 0, zIndex: 9999 }}
+  style={{ borderRadius: 0, position: 'fixed', right: "0", zIndex: 9999, width:"50vw"}}
       >
+        <div style={{height:"95vh",width:"50vw"}}> 
         {overlayContent}
-        {/* You can add whatever content you want for the overlay */}
+        </div>
+        
+
       </Modal>
     </div>
   );

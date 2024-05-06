@@ -216,3 +216,52 @@ html {
 .navbar {
   z-index: 1000; /* Lower than the overlay's zIndex */
 }
+
+
+
+.sustainability {
+  height: 100vh;
+
+
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  line-height: 2em;
+}
+
+
+.sustainability-img2{
+  
+  background-image: url("/images/gallery/Img-2.jpg"); 
+}
+
+.sustainability-img3{
+  
+  background-image: url("/images/gallery/Img-3.jpg"); 
+}
+
+
+.sustainability-img4{
+  
+  background-image: url("/images/gallery/Img-4.jpg"); 
+}
+
+
+
+
+
+.sustainability-img1{
+  
+  background-image: url("/images/gallery/Img-1.jpg");
+}
+
+.title-hover:hover + .sustainability {
+  background-color: red !important;
+ 
+}
+
+.title-hover:hover{
+  color: blue !important;
+}

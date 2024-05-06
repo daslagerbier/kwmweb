@@ -33,7 +33,8 @@ export default function Home() {
         <Sustainability />
         <Features />
         <Team />
-        <LogoScroll />
+        {/* <LogoScroll /> */}
+        <Brands />
         <Contact />
       </>
   );
