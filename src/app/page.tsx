@@ -15,7 +15,7 @@ import VisionSection from "@/components/Vision";
 import { Metadata } from "next";
 import LogoScroll from "./references";
 import Team from "@/components/Team";
-
+// import useTranslation from "next-translate/useTranslation";
 
 export const metadata: Metadata = {
   title: "Innovation meets Sustainability for a better Garment",
@@ -24,18 +24,19 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  // const { t, lang } = useTranslation("common");
+  // const example = t("variable-example", { count: 42 });
   return (
-      <>
-        <ScrollUp />
-        <Hero />
-        <VisionSection />
-        <App />
-        <Sustainability />
-        <Features />
-        <Team />
-        {/* <LogoScroll /> */}
-        <Brands />
-        <Contact />
-      </>
+    <>
+      <ScrollUp />
+      <Hero />
+      <VisionSection />
+      <App />
+      <Sustainability />
+      <Features />
+      <Team />
+      <LogoScroll />
+      <Contact />
+    </>
   );
 }

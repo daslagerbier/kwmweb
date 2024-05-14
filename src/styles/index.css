@@ -234,27 +234,30 @@ html {
 
 .sustainability-img2{
   
-  background-image: url("/images/gallery/Img-2.jpg"); 
+  background-image: url("/images/gallery/033.jpg"); 
 }
 
 .sustainability-img3{
   
-  background-image: url("/images/gallery/Img-3.jpg"); 
+  background-image: url("/images/gallery/014.jpg"); 
 }
 
 
 .sustainability-img4{
   
-  background-image: url("/images/gallery/Img-4.jpg"); 
+  background-image: url("/images/gallery/025.jpg"); 
 }
 
-
+.sustainability-img5{
+  
+  background-image: url("/images/gallery/028.jpg"); 
+}
 
 
 
 .sustainability-img1{
   
-  background-image: url("/images/gallery/Img-1.jpg");
+  background-image: url("/images/gallery/034.jpg");
 }
 
 .title-hover:hover + .sustainability {

@@ -82,7 +82,7 @@ const Sustainability = () => {
         <div
           className="relative cursor-pointer text-white text-6xl font-bold transition duration-300 hover:text-red-500"
            onMouseEnter={() => 
-            setClassImg1("sustainability-img2") 
+            setClassImg1("sustainability-img5") 
            }
            onMouseLeave={() => 
             setClassImg1("sustainability-img1") 

@@ -32,7 +32,7 @@ const App: React.FC = () => {
       <div>
         <img
           className="h-screen w-screen object-cover"
-          src="/images/gallery/Img-2.jpg"
+          src="/images/gallery/021.jpg"
           alt="Image"
         />
       </div>
@@ -40,7 +40,7 @@ const App: React.FC = () => {
         <img
           className="h-screen w-screen object-cover"
           // className="max-h-800 max-w-full"
-          src="/images/gallery/Img-3.jpg"
+          src="/images/gallery/003.jpg"
           alt="Image"
         />
       </div>
@@ -48,7 +48,47 @@ const App: React.FC = () => {
         <img
           className="h-screen w-screen object-cover"
           // className="max-h-800 max-w-full"
-          src="/images/gallery/Img-4.jpg"
+          src="/images/gallery/004.jpg"
+          alt="Image"
+        />
+      </div>
+      <div>
+        <img
+          className="h-screen w-screen object-cover"
+          // className="max-h-800 max-w-full"
+          src="/images/gallery/016.jpg"
+          alt="Image"
+        />
+      </div>
+      <div>
+        <img
+          className="h-screen w-screen object-cover"
+          // className="max-h-800 max-w-full"
+          src="/images/gallery/019.jpg"
+          alt="Image"
+        />
+      </div>
+      <div>
+        <img
+          className="h-screen w-screen object-cover"
+          // className="max-h-800 max-w-full"
+          src="/images/gallery/020.jpg"
+          alt="Image"
+        />
+      </div>
+      <div>
+        <img
+          className="h-screen w-screen object-cover"
+          // className="max-h-800 max-w-full"
+          src="/images/gallery/025.jpg"
+          alt="Image"
+        />
+      </div>
+      <div>
+        <img
+          className="h-screen w-screen object-cover"
+          // className="max-h-800 max-w-full"
+          src="/images/gallery/026.jpg"
           alt="Image"
         />
       </div>
