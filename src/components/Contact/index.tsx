@@ -1,6 +1,11 @@
 "use client";
 
-import MyMap from "../MyMap/MyMap";
+import dynamic from "next/dynamic";
+
+const MyMap = dynamic(() => import("../MyMap/MyMap"), {
+  loading: () => <p>loading...</p>,
+  ssr: false
+})
 
 const Contact = () => {
   return (

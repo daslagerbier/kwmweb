@@ -15,9 +15,6 @@ const contentStyle: React.CSSProperties = {
 };
 
 const App: React.FC = () => {
-  const onChange = (currentSlide: number) => {
-    console.log(currentSlide);
-  };
 
   // const prevArrow = (
   //   <Button type="primary" shape="circle" icon={<LeftOutlined />} style={{fontSize:'60px', top: '50%', left: '20px', transform: 'translateY(-50%)' }}/>
