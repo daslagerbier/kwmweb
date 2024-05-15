@@ -1,6 +1,3 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
@@ -10,10 +7,8 @@ import Hero from "@/components/Hero";
 
 import Sustainability from "@/components/Sustainability";
 
-import Video from "@/components/Video";
 import VisionSection from "@/components/Vision";
 import { Metadata } from "next";
-import LogoScroll from "./references";
 import Team from "@/components/Team";
 // import useTranslation from "next-translate/useTranslation";
 
@@ -35,7 +30,7 @@ export default function Home() {
       <Sustainability />
       <Features />
       <Team />
-      <LogoScroll />
+      <Brands />
       <Contact />
     </>
   );
