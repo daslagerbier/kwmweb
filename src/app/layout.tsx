@@ -6,10 +6,11 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Kanit, Podkova } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
+import { Providers } from "./providers";
 
 const inter = Kanit({
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
 });
 
 export default function RootLayout({
@@ -37,4 +38,3 @@ export default function RootLayout({
   );
 }
 
-import { Providers } from "./providers";

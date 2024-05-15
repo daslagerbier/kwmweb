@@ -1,3 +1,5 @@
+"use client";
+
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
@@ -10,22 +12,25 @@ import Sustainability from "@/components/Sustainability";
 import VisionSection from "@/components/Vision";
 import { Metadata } from "next";
 import Team from "@/components/Team";
-// import useTranslation from "next-translate/useTranslation";
-
-export const metadata: Metadata = {
+import React from "react";
+import { useSessionStorageState } from "ahooks";
+/* export const metadata: Metadata = {
   title: "Innovation meets Sustainability for a better Garment",
   description: "KWM",
   // other metadata
-};
+}; */
 
 export default function Home() {
-  // const { t, lang } = useTranslation("common");
-  // const example = t("variable-example", { count: 42 });
+  const langs = ["FR","EN","ES"]
+  const [lang, setLang] =  useSessionStorageState("lang",{
+    defaultValue: 'FR',
+  });
+
   return (
     <>
       <ScrollUp />
       <Hero />
-      <VisionSection />
+      <VisionSection setLang={setLang} lang={lang}  langs={langs} />
       <App />
       <Sustainability />
       <Features />
