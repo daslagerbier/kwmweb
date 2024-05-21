@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import menuData from "./menuData";
 import LanguagePicker from "./LanguagePicker";
 import { useRouter } from "next/router";
+import { useLangContext } from "@/context/languageContext";
+import { Select } from "antd";
 
 // interface Language {
 //   code: string;
@@ -19,6 +21,8 @@ import { useRouter } from "next/router";
 // ];
 
 const Header = () => {
+  const { langs, lang, setLang } = useLangContext();
+
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -60,6 +64,15 @@ const Header = () => {
         }`}
       >
         <div className="container">
+        <Select
+        defaultValue={lang}
+        style={{ width: 120 }}
+        onChange={(e) => setLang(e)}
+        options={langs.map((lang) => ({
+          value: lang,
+          name: lang,
+        }))}
+      />
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link

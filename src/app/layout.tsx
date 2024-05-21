@@ -7,17 +7,26 @@ import { Kanit, Podkova } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 import { Providers } from "./providers";
-
+import { useSessionStorageState } from "ahooks";
 const inter = Kanit({
   subsets: ["latin"],
   weight: "400",
 });
+import { LangProvider } from "@/context/languageContext";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const [lang, setLang] = useSessionStorageState("lang", {
+    defaultValue: 'FR',
+  });
+  const langContextValue = {
+    langs: ["FR", "EN", "ES"],
+    lang,
+    setLang
+  };
   return (
     <html suppressHydrationWarning lang="en">
       {/*
@@ -27,14 +36,15 @@ export default function RootLayout({
       <head />
 
       <body className={`bg-[#EBEBEB] dark:bg-black ${inter.className}`}>
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-          <ScrollToTop />
-        </Providers>
+        <LangProvider value={langContextValue}>
+          <Providers>
+            <Header />
+            {children}
+            <Footer />
+            <ScrollToTop />
+          </Providers>
+        </LangProvider>
       </body>
     </html>
   );
 }
-

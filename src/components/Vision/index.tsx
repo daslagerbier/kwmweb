@@ -1,7 +1,8 @@
-import { Select } from "antd";
 import React from "react";
 import langData from '../../langs/data.json';
-function VisionSection({ lang,  langs, setLang }) {
+import { useLangContext } from "@/context/languageContext";
+function VisionSection() {
+  const { langs, lang } = useLangContext();
   return (
     <div
       id="vision"
@@ -11,15 +12,7 @@ function VisionSection({ lang,  langs, setLang }) {
         marginTop: "-60px",
       }}
     >
-      <Select
-        defaultValue={lang}
-        style={{ width: 120 }}
-        onChange={(e) => setLang(e)}
-        options={langs.map((lang) => ({
-          value: lang,
-          name: lang,
-        }))}
-      />
+      
       <p
         style={{
           paddingTop: "100px",

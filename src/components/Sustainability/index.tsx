@@ -119,6 +119,8 @@
 "use client";
 import { useState } from 'react';
 import { Modal } from 'antd';
+import langData from '../../langs/data.json';
+
 
 const Sustainability = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -164,7 +166,7 @@ const Sustainability = () => {
             onClick={() => showModal(getOverlayContent('Text 1'))}
             style={{ fontFamily: 'Inknut Antiqua, serif', fontWeight: 300 }}
           >
-            CARBON FOOTPRINT REDUCTION
+            {langData["ES"].sustainability_t1}
           </div>
           <div
             className="relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
