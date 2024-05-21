@@ -161,7 +161,7 @@ const Sustainability = () => {
       <div className="absolute bottom-0 left-0 p-4 md:p-8">
         <div className="grid gap-4">
           <div
-            className="relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
+            className="uppercase relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
             onMouseEnter={() => setClassImg1("sustainability-img2")}
             onMouseLeave={() => setClassImg1("sustainability-img1")}
             onClick={() => showModal(getOverlayContent('Text 1'))}
@@ -170,7 +170,7 @@ const Sustainability = () => {
             {langData[lang].sustainability_t1}
           </div>
           <div
-            className="relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
+            className="uppercase relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
             onMouseEnter={() => setClassImg1("sustainability-img3")}
             onMouseLeave={() => setClassImg1("sustainability-img1")}
             onClick={() => showModal(getOverlayContent('Text 2'))}
@@ -179,7 +179,7 @@ const Sustainability = () => {
             {langData[lang].sustainability_t2}
           </div>
           <div
-            className="relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
+            className="uppercase relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
             onMouseEnter={() => setClassImg1("sustainability-img4")}
             onMouseLeave={() => setClassImg1("sustainability-img1")}
             onClick={() => showModal(getOverlayContent('Text 3'))}
@@ -188,7 +188,7 @@ const Sustainability = () => {
             {langData[lang].sustainability_t3}
           </div>
           <div
-            className="relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
+            className="uppercase relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
             onMouseEnter={() => setClassImg1("sustainability-img5")}
             onMouseLeave={() => setClassImg1("sustainability-img1")}
             onClick={() => showModal(getOverlayContent('Text 4'))}
