@@ -10,11 +10,10 @@ import Sustainability from "@/components/Sustainability";
 import VisionSection from "@/components/Vision";
 import Team from "@/components/Team";
 import React from "react";
-import {useLangContext} from "@/context/languageContext"
 
 
 export default function Home() {
-  const { langs, lang, setLang } = useLangContext();
+  
   return (
     <>
       <ScrollUp />

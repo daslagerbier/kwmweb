@@ -1,24 +1,13 @@
 "use client";
 import Image from "next/image";
+import { Menu } from "@/types/menu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import menuData from "./menuData";
-import LanguagePicker from "./LanguagePicker";
-import { useRouter } from "next/router";
 import { useLangContext } from "@/context/languageContext";
 import { Select } from "antd";
+import langData from '../../langs/data.json';
 
-// interface Language {
-//   code: string;
-//   name: string;
-// }
-
-// const languages: Language[] = [
-//   { code: "en", name: "English" },
-//   { code: "fr", name: "French" },
-//   // Add more languages as needed
-// ];
 
 const Header = () => {
   const { langs, lang, setLang } = useLangContext();
@@ -53,7 +42,39 @@ const Header = () => {
   };
 
   const usePathName = usePathname();
-
+  const menuData: Menu[] = [
+    {
+      id: 1,
+      title: langData[lang].nav_vision,
+      path: "#vision",
+      newTab: false,
+    },
+    {
+      id: 2,
+      title: langData[lang].nav_sustainability,
+      path: "#sustainability",
+      newTab: false,
+    },
+    {
+      id: 33,
+      title: langData[lang].nav_services,
+      path: "#services",
+      newTab: false,
+    },
+    {
+      id: 3,
+      title: langData[lang].nav_team,
+      path: "#team",
+      newTab: false,
+    },
+    {
+      id: 4,
+      title: langData[lang].nav_contact,
+      path: "#contact",
+      newTab: false,
+    },
+  
+  ];
   return (
     <>
       <header

@@ -120,6 +120,7 @@
 import { useState } from 'react';
 import { Modal } from 'antd';
 import langData from '../../langs/data.json';
+import { useLangContext } from '@/context/languageContext';
 
 
 const Sustainability = () => {
@@ -153,7 +154,7 @@ const Sustainability = () => {
         return '';
     }
   };
-
+  const { langs, lang, setLang } = useLangContext();
   return (
     <div id='sustainability' className={`relative w-full h-auto sustainability ${classImg1}`}>
 
@@ -164,36 +165,36 @@ const Sustainability = () => {
             onMouseEnter={() => setClassImg1("sustainability-img2")}
             onMouseLeave={() => setClassImg1("sustainability-img1")}
             onClick={() => showModal(getOverlayContent('Text 1'))}
-            style={{ fontFamily: 'Inknut Antiqua, serif', fontWeight: 300 }}
+            
           >
-            {langData["ES"].sustainability_t1}
+            {langData[lang].sustainability_t1}
           </div>
           <div
             className="relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
             onMouseEnter={() => setClassImg1("sustainability-img3")}
             onMouseLeave={() => setClassImg1("sustainability-img1")}
             onClick={() => showModal(getOverlayContent('Text 2'))}
-            style={{ fontFamily: 'Inknut Antiqua, serif', fontWeight: 300 }}
+            
           >
-            WASTE REDUCTION
+            {langData[lang].sustainability_t2}
           </div>
           <div
             className="relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
             onMouseEnter={() => setClassImg1("sustainability-img4")}
             onMouseLeave={() => setClassImg1("sustainability-img1")}
             onClick={() => showModal(getOverlayContent('Text 3'))}
-            style={{ fontFamily: 'Inknut Antiqua, serif', fontWeight: 300 }}
+            
           >
-            ECO FRIENDLY MATERIALS
+            {langData[lang].sustainability_t3}
           </div>
           <div
             className="relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
             onMouseEnter={() => setClassImg1("sustainability-img5")}
             onMouseLeave={() => setClassImg1("sustainability-img1")}
             onClick={() => showModal(getOverlayContent('Text 4'))}
-            style={{ fontFamily: 'Inknut Antiqua, serif', fontWeight: 300 }}
+          
           >
-            ETHICAL MANUFACTURING
+            {langData[lang].sustainability_t4}
           </div>
         </div>
       </div>

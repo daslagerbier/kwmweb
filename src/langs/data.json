@@ -1,5 +1,10 @@
 {
   "EN": {
+    "nav_vision": "vision",
+    "nav_sustainability": "sustainability",
+    "nav_services": "services",
+    "nav_team": "team",
+    "nav_contact": "contact",
     "vision_section_1": "Established in 2011 in Dar Chaabene El Fehri, Nabeul, K.W Manufacturing is a pioneering exporter of sewing services in the textile industry. Our commitment lies in delivering high_value solutions, leveraging innovative production techniques such as the Kaizen system, overseen by experienced managers and technicians. At K.W Manufacturing, our mission is to foster a motivating, socio_economically conscious, and respectful work environment for all team members involved in our production lines. Our core values of expertise, precision, efficiency, and adherence to deadlines drive every aspect of our operations.",
     "sustainability_t1": "Carbon footpring reduction",
     "sustainability_t2": "Waste reduction",
@@ -36,6 +41,11 @@
     "contact_cta": "Send Email"
   },
   "FR": {
+    "nav_vision": "vision",
+    "nav_sustainability": "durabilité",
+    "nav_services": "services",
+    "nav_team": "équipe",
+    "nav_contact": "contact",
     "vision_section_1": "Établie en 2011 à Dar Chaabene El Fehri, Nabeul, K.W Manufacturing est un exportateur pionnier de services de couture dans l'industrie textile. Notre engagement réside dans la fourniture de solutions à haute valeur ajoutée, en exploitant des techniques de production innovantes telles que le système Kaizen, supervisées par des managers et des techniciens expérimentés. Chez K.W Manufacturing, notre mission est de favoriser un environnement de travail motivant, socialement et économiquement conscient, et respectueux pour tous les membres de l'équipe impliqués dans nos lignes de production. Nos valeurs fondamentales d'expertise, de précision, d'efficacité et de respect des délais guident tous les aspects de nos opérations.",
     "sustainability_t1": "Réduction de l'empreinte carbone",
     "sustainability_t2": "Réduction des déchets",
@@ -72,6 +82,11 @@
     "contact_cta": "Envoyer un e_mail"
   },
   "ES": {
+    "nav_vision": "visión",
+    "nav_sustainability": "sostenibilidad",
+    "nav_services": "servicios",
+    "nav_team": "equipo",
+    "nav_contact": "contacto",
     "vision_section_1": "Establecida en 2011 en Dar Chaabene El Fehri, Nabeul, K.W Manufacturing es un exportador pionero de servicios de costura en la industria textil. Nuestro compromiso radica en ofrecer soluciones de alto valor, aprovechando técnicas de producción innovadoras como el sistema Kaizen, supervisado por gerentes y técnicos experimentados. En K.W Manufacturing, nuestra misión es fomentar un entorno de trabajo motivador, social y económicamente consciente, y respetuoso para todos los miembros del equipo involucrados en nuestras líneas de producción. Nuestros valores fundamentales de experiencia, precisión, eficiencia y cumplimiento de plazos guían cada aspecto de nuestras operaciones.",
     "sustainability_t1": "Reducción de la huella de carbono",
     "sustainability_t2": "Reducción de residuos",
