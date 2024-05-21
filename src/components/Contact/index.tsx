@@ -1,13 +1,14 @@
 "use client";
-
+import langData from "../../langs/data.json"
 import dynamic from "next/dynamic";
-
+import { useLangContext } from '@/context/languageContext';
 const MyMap = dynamic(() => import("../MyMap/MyMap"), {
   loading: () => <p>loading...</p>,
   ssr: false,
 });
 
 const Contact = () => {
+  const { lang  } = useLangContext();
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
