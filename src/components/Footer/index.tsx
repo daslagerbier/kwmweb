@@ -8,8 +8,8 @@ const Footer = () => {
       <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 max-w-[360px] lg:mb-16">
+            <div className="w-full px-2 md:w-1/2 lg:w-4/12 xl:w-5/12">
+              <div className="mb-12 max-w-[180px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                 <Image
                     src="/images/logo/logoKwm.svg"
@@ -22,14 +22,11 @@ const Footer = () => {
                     src="/images/logo/logoKwm.svg"
                     alt="logo"
                     className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
+                    width={150}
+                    height={150}
                   />
                 </Link>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
-                </p>
+              
                 <div className="flex items-center">
                   <a
                     href="/"
@@ -109,7 +106,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+            {/* <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Useful Links
@@ -175,37 +172,36 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
 
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
-                </h2>
+                
                 <ul>
                   <li>
-                    <Link
-                      href="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    <h3
+                      
+                      className="mb-4 inline-block text-base text-body-color duration-300  dark:text-body-color-dark "
                     >
-                      Open Support Ticket
-                    </Link>
+                      Route de Béni Khiar 8011 
+                      Dar Chaaben El Fehri Nabeul Tunisie
+                    </h3>
                   </li>
                   <li>
-                    <Link
-                      href="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    <h3
+                      
+                      className="mb-4 inline-block text-base text-body-color duration-300  dark:text-body-color-dark "
                     >
-                      Terms of Use
-                    </Link>
+                      +216 72 361 435 / +216 72 362 342
+                    </h3>
                   </li>
                   <li>
-                    <Link
-                      href="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    <h3
+                  
+                      className="mb-4 inline-block text-base text-body-color duration-300 dark:text-body-color-dark"
                     >
-                      About
-                    </Link>
+                      contact@kw-manufacturing.com
+                    </h3>
                   </li>
                 </ul>
               </div>
@@ -215,7 +211,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              knitwear manufacturing all rights reserved 2024
+              Knitwear manufacturing. all rights reserved. 2024
             </p>
           </div>
         </div>
