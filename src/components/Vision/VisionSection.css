@@ -1,0 +1,29 @@
+#vision {
+  background-color: #EBEBEB;
+  padding: 20px;
+  margin-top: -60px;
+}
+
+.vision-text {
+  padding-top: 100px;
+  margin: 20px;
+  color: #C8001E;
+  font-size: 32px;
+  font-family: Kanit, sans-serif;
+  font-style: normal;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .vision-text {
+    font-size: 24px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision-text {
+    font-size: 18px;
+    padding-top: 30px;
+  }
+}
