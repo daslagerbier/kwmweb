@@ -71,15 +71,15 @@
     "team_tmp2": "Chef de produit",
     "team_tmp3": "Responsable qualité",
     "team_tmp4": "Responsable RH",
-    "contact_t0": "Contactez_nous !",
-    "contact_d0": "Nous apprécions vos commentaires, vos demandes de renseignements et vos opportunités de collaboration. N'hésitez pas à nous contacter en utilisant les coordonnées fournies ci_dessous. Notre équipe dédiée est là pour vous aider et répondre à toutes vos questions ou préoccupations.",
+    "contact_t0": "Contactez-nous !",
+    "contact_d0": "Nous apprécions vos commentaires, vos demandes de renseignements et vos opportunités de collaboration. N'hésitez pas à nous contacter en utilisant les coordonnées fournies ci-dessous. Notre équipe dédiée est là pour vous aider et répondre à toutes vos questions ou préoccupations.",
     "contact_nme": "Votre nom",
     "contact_nme_tt": "Entrez votre nom",
-    "contact_eml": "Votre e_mail",
-    "contact_eml_tt": "Entrez votre e_mail",
+    "contact_eml": "Votre e-mail",
+    "contact_eml_tt": "Entrez votre e-mail",
     "contact_msg": "Votre message",
     "contact_msg_tt": "Entrez votre message",
-    "contact_cta": "Envoyer un e_mail"
+    "contact_cta": "Envoyer un e-mail"
   },
   "ES": {
     "nav_vision": "visión",
