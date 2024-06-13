@@ -120,12 +120,27 @@ video {
 .sub-content img {
   display: none;
 }
+@media (max-width: 768px) {
+  .custom-modal{
+    width: 90vw !important; 
+    scrollbar-width: none !important;
+    
+  }
+}
 
 @media (min-width: 768px) {
+ 
   .hero_container {
     position: relative;
     height: 100%;
     overflow: hidden;
+  }
+
+  .custom-modal{
+    width: 50vw !important;
+    margin-right: 0 !important;
+    scrollbar-width: none !important;
+    
   }
 
   /* Add some content at the bottom of the video/page */
@@ -268,3 +283,12 @@ html {
 .title-hover:hover{
   color: blue !important;
 }
+
+.overlaysection h2{
+  font-size: 25px;
+}
+.overlaysection p{
+  font-size: 16px;
+  padding: 1rem;
+}
+

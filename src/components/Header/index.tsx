@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { useLangContext } from "@/context/languageContext";
 import { Select } from "antd";
 import langData from '../../langs/data.json';
-
+import './styles.css';
 
 const Header = () => {
   const { langs, lang, setLang } = useLangContext();
