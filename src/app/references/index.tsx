@@ -34,7 +34,6 @@ const logos: LogoItem[] = [
   { src: '/images/referenceslogos/stone-island.png', alt: 'stone-island' },
   { src: '/images/referenceslogos/the-lighthouse.png', alt: 'the-lighthouse' },
   { src: '/images/referenceslogos/tonies.png', alt: 'tonies' }
-  // Add more logos as needed
 ];
 
 const LogoScroll: React.FC = () => {

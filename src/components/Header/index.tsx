@@ -176,6 +176,7 @@ const Header = () => {
             </div>
             <div className="w-60 max-w-full px-4 xl:mr-12 ">
               <Select
+              
                 defaultValue={lang}
                 onChange={(e) => setLang(e)}
                 options={langs.map((lang) => ({

@@ -25,7 +25,7 @@ const Team: React.FC = () => {
     },
     {
       name: "Sabrine CHELBI",
-      job: "RH Manager",
+      job: "HR Manager",
       img: "https://kw-manufacturing.com/wp-content/uploads/2021/09/Sabrine-CHELBI-1.jpg",
     }
   ];
@@ -47,6 +47,7 @@ const Team: React.FC = () => {
       <SectionTitle
       title={langData[lang].team_t0}
       paragraph={langData[lang].team_d0}
+      center
       />
       </div>
         

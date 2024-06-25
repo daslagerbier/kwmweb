@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import Logo from './logo'; // Assuming you have a Logo component
+import Logo from './logo';
 
 interface LogoItem {
   src: string;

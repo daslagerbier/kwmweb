@@ -49,7 +49,7 @@ const Sustainability = () => {
         <div className="grid gap-4">
           {/* Dynamic content based on language selection */}
           <div
-            className="uppercase relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
+            className="uppercase relative cursor-pointer text-white text-4xl sm:text-6xl md:text-8xl font-bold transition duration-300 hover:text-red-500"
             onMouseEnter={() => setClassImg1("sustainability-img2")}
             onMouseLeave={() => setClassImg1("sustainability-img1")}
             onClick={() => showModal(getOverlayContent('Text 1'))}
@@ -57,7 +57,7 @@ const Sustainability = () => {
             {langData[lang].sustainability_t1}
           </div>
           <div
-            className="uppercase relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
+            className="uppercase relative cursor-pointer text-white text-4xl sm:text-6xl md:text-8xl font-bold transition duration-300 hover:text-red-500"
             onMouseEnter={() => setClassImg1("sustainability-img3")}
             onMouseLeave={() => setClassImg1("sustainability-img1")}
             onClick={() => showModal(getOverlayContent('Text 2'))}
@@ -65,7 +65,7 @@ const Sustainability = () => {
             {langData[lang].sustainability_t2}
           </div>
           <div
-            className="uppercase relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
+            className="uppercase relative cursor-pointer text-white text-4xl sm:text-6xl md:text-8xl font-bold transition duration-300 hover:text-red-500"
             onMouseEnter={() => setClassImg1("sustainability-img4")}
             onMouseLeave={() => setClassImg1("sustainability-img1")}
             onClick={() => showModal(getOverlayContent('Text 3'))}
@@ -73,7 +73,7 @@ const Sustainability = () => {
             {langData[lang].sustainability_t3}
           </div>
           <div
-            className="uppercase relative cursor-pointer text-white text-2xl sm:text-4xl md:text-6xl font-bold transition duration-300 hover:text-red-500"
+            className="uppercase relative cursor-pointer text-white text-4xl sm:text-6xl md:text-8xl font-bold transition duration-300 hover:text-red-500"
             onMouseEnter={() => setClassImg1("sustainability-img5")}
             onMouseLeave={() => setClassImg1("sustainability-img1")}
             onClick={() => showModal(getOverlayContent('Text 4'))}
@@ -92,7 +92,7 @@ const Sustainability = () => {
         
         
       >
-        <div style={{ height: "96vh" }}>
+        <div style={{ height: "100vh" }}>
           {overlayContent}
         </div>
       </Modal>
