@@ -4,7 +4,7 @@ import "leaflet-defaulticon-compatibility"
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css"
 
 export default function MyMap(props: any) {
-  return <MapContainer center={[36.4614333,10.7622873]} zoom={13} scrollWheelZoom={false} style={{
+  return <MapContainer center={[36.461474, 10.764123]} zoom={13} scrollWheelZoom={false} style={{
     height:"500px",
     width:"100%",
   }} >
