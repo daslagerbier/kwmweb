@@ -18,11 +18,7 @@ const Team: React.FC = () => {
       job: "Product Manager",
       img: "https://kw-manufacturing.com/wp-content/uploads/2021/09/Meriem-ATTIA.jpg",
     },
-    {
-      name: "Bianca SEGALA",
-      job: "Quality Manager",
-      img: "https://kw-manufacturing.com/wp-content/uploads/2021/09/Bianca-SEGALA.jpg",
-    },
+  
     {
       name: "Sabrine CHELBI",
       job: "HR Manager",
