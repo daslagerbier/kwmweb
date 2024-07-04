@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  const currentYear  = new Date().getFullYear();
   return (
     <>
       <footer className="relative z-10 bg-white dark:bg-gray-dark md:pt-8 lg:pt-12">
@@ -29,7 +30,7 @@ const Footer = () => {
               
                 <div className="flex items-center">
                   <a
-                    href="/"
+                    href="https://www.facebook.com/people/Knitwear-Manufacturing/100081075934820/"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -87,7 +88,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="https://www.linkedin.com/company/kwmanufacturing/"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -143,7 +144,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-              Knitwear manufacturing. all rights reserved. 2024
+              Knitwear manufacturing. all rights reserved. {currentYear}
             </p>
           </div>
         </div>

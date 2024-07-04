@@ -23,7 +23,7 @@ export default function RootLayout({
     defaultValue: 'FR',
   });
   const langContextValue = {
-    langs: ["FR", "EN", "ES"],
+    langs: ["FR", "EN"],
     lang,
     setLang
   };

@@ -41,14 +41,14 @@ const App: React.FC = () => {
           alt="Image"
         />
       </div>
-      <div>
+      {/* <div>
         <img
           className="h-screen w-screen object-cover"
           // className="max-h-800 max-w-full"
           src="/images/gallery/004.jpg"
           alt="Image"
         />
-      </div>
+      </div> */}
       <div>
         <img
           className="h-screen w-screen object-cover"
@@ -57,14 +57,14 @@ const App: React.FC = () => {
           alt="Image"
         />
       </div>
-      <div>
+      {/* <div>
         <img
           className="h-screen w-screen object-cover"
           // className="max-h-800 max-w-full"
           src="/images/gallery/019.jpg"
           alt="Image"
         />
-      </div>
+      </div> */}
       <div>
         <img
           className="h-screen w-screen object-cover"

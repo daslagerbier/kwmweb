@@ -8,7 +8,7 @@
 
 @layer base {
   body {
-    font-family: "Kanit", sans-serif;
+    font-family: "Kanit", sans-serif !important;
     font-optical-sizing: auto;
     font-style: normal;
   }
@@ -53,6 +53,9 @@
   color: red;
 }
 
+.ant-select .ant-select-selection-item {
+  font-weight: 600 !important;
+}
 /** @format */
 
 .hero_container {

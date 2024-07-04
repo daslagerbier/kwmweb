@@ -18,10 +18,10 @@ const Contact = () => {
             data-wow-delay=".15s
               "
           >
-            <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
+            <h2 className="mb-3 text-2xl font-medium text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
             {langData[lang].contact_t0}
             </h2>
-            <p className="mb-12 text-base font-medium text-body-color">
+            <p className="mb-12 text-base  text-body-color">
             {langData[lang].contact_d0}
             </p>
             <form>
@@ -30,14 +30,14 @@ const Contact = () => {
                   <div className="mb-8">
                     <label
                       htmlFor="name"
-                      className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                      className="mb-3 block text-md  text-dark dark:text-white"
                     >
                       {langData[lang].contact_nme}
                     </label>
                     <input
                       type="text"
                       placeholder={langData[lang].contact_nme_tt}
-                      className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                      className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base font-light text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                     />
                   </div>
                 </div>
@@ -45,14 +45,14 @@ const Contact = () => {
                   <div className="mb-8">
                     <label
                       htmlFor="email"
-                      className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                      className="mb-3 block text-md  text-dark dark:text-white"
                     >
                       {langData[lang].contact_eml}
                     </label>
                     <input
                       type="email"
                       placeholder={langData[lang].contact_eml_tt}
-                      className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                      className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base font-light text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                     />
                   </div>
                 </div>
@@ -60,7 +60,7 @@ const Contact = () => {
                   <div className="mb-8">
                     <label
                       htmlFor="message"
-                      className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                      className="mb-3 block text-md  text-dark dark:text-white"
                     >
                      {langData[lang].contact_msg}
                     </label>
@@ -68,12 +68,12 @@ const Contact = () => {
                       name="message"
                       rows={5}
                       placeholder={langData[lang].contact_msg_tt}
-                      className="border-stroke w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
+                      className="border-stroke w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-md font-light text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                     ></textarea>
                   </div>
                 </div>
                 <div className="w-full px-4">
-                  <button className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
+                  <button className="rounded-sm bg-primary px-9 py-4 text-base text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
                   {langData[lang].contact_cta}
                   </button>
                 </div>
