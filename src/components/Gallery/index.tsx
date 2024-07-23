@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Carousel, Button } from "antd";
-import Img1 from "/public/images/gallery/Img-1.jpg";
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 
 
@@ -14,8 +13,8 @@ const contentStyle: React.CSSProperties = {
   background: "#364d79",
 };
 
-const App: React.FC = () => {
 
+const Gallery = () => {
   // const prevArrow = (
   //   <Button type="primary" shape="circle" icon={<LeftOutlined />} style={{fontSize:'60px', top: '50%', left: '20px', transform: 'translateY(-50%)' }}/>
   // );
@@ -93,4 +92,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Gallery;
