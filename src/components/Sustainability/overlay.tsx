@@ -38,7 +38,7 @@ const Overlay = (props) => {
       <div className='overlaysection'> 
       <SectionTitle title={props.title} paragraph={props.paragraph} />
       </div>
-      <div style={{ position: 'relative', width: '100%', height: 'auto' }}>
+      {/* <div style={{ position: 'relative', width: '100%', height: 'auto' }}>
         <Image
           src="/images/frame 7.png"
           alt="Image"
@@ -47,7 +47,7 @@ const Overlay = (props) => {
           height={2}
           style={{ width: '100%', height: 'auto' }}
         />
-      </div>
+      </div> */}
     </div>
   );
 };
