@@ -111,6 +111,25 @@ const Footer = () => {
               <div className="mb-12 lg:mb-16">
                 
                 <ul>
+                   <h1
+                  className="mb-2 inline-block text-3xl  text-primary duration-300 dark:text-body-color-dark"
+                  > Contact Us !</h1>
+                {/* <li>
+                    <h3
+                  
+                      className="mb-4 inline-block text-base text-body-color duration-300 dark:text-body-color-dark"
+                    >
+                      contact@kw-manufacturing.com
+                    </h3>
+                  </li> */}
+                  <li>
+                    <a
+                      href="mailto:contact@kw-manufacturing.com"
+                      className="mb-4 inline-block text-base  underline text-body-color duration-300 dark:text-body-color-dark"
+                    >
+                      contact@kw-manufacturing.com
+                    </a>
+                  </li>
                   <li>
                     <h3
                       
@@ -128,14 +147,7 @@ const Footer = () => {
                       +216 72 361 435 / +216 72 362 342
                     </h3>
                   </li>
-                  <li>
-                    <h3
                   
-                      className="mb-4 inline-block text-base text-body-color duration-300 dark:text-body-color-dark"
-                    >
-                      contact@kw-manufacturing.com
-                    </h3>
-                  </li>
                 </ul>
               </div>
             </div>

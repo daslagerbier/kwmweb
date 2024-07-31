@@ -13,12 +13,12 @@ const Contact = () => {
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
         <div className="flex w-full flex-wrap space-x-4 justify-center items-center">
-          <div
+          {/* <div
             className="max-w-3xl mb-12 rounded-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
             data-wow-delay=".15s
               "
-          >
-            <h2 className="mb-3 text-2xl font-medium text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
+          > */}
+            {/* <h2 className="mb-3 text-2xl font-medium text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
             {langData[lang].contact_t0}
             </h2>
             <p className="mb-12 text-base  text-body-color">
@@ -78,8 +78,8 @@ const Contact = () => {
                   </button>
                 </div>
               </div>
-            </form>
-          </div>
+            </form> */}
+          {/* </div> */}
           <div className="h-full w-full max-w-xl">
             <MyMap />
           </div>

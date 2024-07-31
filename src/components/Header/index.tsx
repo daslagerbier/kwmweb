@@ -174,7 +174,7 @@ const Header = () => {
                 </nav>
               </div>
             </div>
-            <div className="w-60 max-w-full px-4 xl:mr-12 ">
+            <div className="w-60 px-4 xl:mr-12 ">
               <Select
               
                 defaultValue={lang}
