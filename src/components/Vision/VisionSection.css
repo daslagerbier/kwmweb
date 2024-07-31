@@ -12,7 +12,10 @@
 
 
 /* @media (max-width: 768px) {
+
+/* @media (max-width: 768px) {
   .vision-text {
+    font-size: 28px;
     font-size: 28px;
     padding-top: 50px;
   }
@@ -21,6 +24,8 @@
 @media (max-width: 480px) {
   .vision-text {
     font-size: 28px;
+    font-size: 28px;
     padding-top: 30px;
   }
+} */
 } */

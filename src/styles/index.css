@@ -64,6 +64,7 @@
 }
 
 
+
 video {
   position: fixed;
   object-fit: cover;
@@ -72,6 +73,7 @@ video {
   z-index: -9999;
 }
 
+/* Add some content at the bottom of the video/page
 /* Add some content at the bottom of the video/page
 .content {
   position: absolute;
@@ -95,6 +97,7 @@ video {
   font-size: 1.3rem;
   margin: 0px;
   padding: 0px;
+} */
 } */
 
 .sub-content p {
@@ -297,6 +300,13 @@ html {
 
 
 
+
+
+ .overlaysection h2{
+  margin-bottom: 3rem;
+  color: #C9011E;
+  text-transform: uppercase;
+  
  .overlaysection h2{
   margin-bottom: 3rem;
   color: #C9011E;
@@ -306,6 +316,11 @@ html {
 .overlaysection p{
   font-size: 16px;
   padding: 1rem;
+  text-align: justify;
+} 
+
+.overlaysection {
+  margin: 3rem
   text-align: justify;
 } 
 
