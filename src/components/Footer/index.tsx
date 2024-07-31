@@ -15,9 +15,9 @@ const Footer = () => {
   const { lang  } = useLangContext();
   return (
     <>
-      <footer className="relative z-10 bg-white dark:bg-gray-dark md:pt-8 lg:pt-16">
+      <footer id="contact" className="relative z-10 bg-white dark:bg-gray-dark -mt-1 pt-8 md:pt-8 lg:pt-16">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap justify-center">
+          <div className=" flex flex-wrap justify-center">
             <div className="max-w-[260px] px-2 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[260px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
@@ -160,7 +160,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className=" w-full max-w-xl">
+            <div className=" w-full max-w-xl min-h-80">
             <MyMap />
           </div>
           </div>

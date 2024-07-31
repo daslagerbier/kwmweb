@@ -4,7 +4,7 @@ import brandsData from "./brandsData";
 
 const Brands = () => {
   return (
-    <section className="pt-8" style={{backgroundColor:"white"}}>
+    <section className="py-8 -mt-1" style={{backgroundColor:"white"}}>
       <div className="container ">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">

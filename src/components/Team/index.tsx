@@ -27,7 +27,7 @@ const Team: React.FC = () => {
   ];
 
   return (
-    <div className="bg-inherit pb-8">
+    <div className="bg-inherit py-8 -mt-1">
     <div id="team" className="container">
       {/* <Row justify="center">
         <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]" style={{ padding: "1rem" }}>

@@ -95,7 +95,7 @@ const Features = () => {
   ];
   return (
     <>
-      <section id="services" className="py-16 md:py-20 lg:py-28 bg-inherit">
+      <section id="services" className="py-16 md:py-20 lg:py-28 bg-inherit px-4">
         <div className="container">
           <div className="flex justify-center">
             <SectionTitle

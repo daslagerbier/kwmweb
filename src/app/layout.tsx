@@ -3,39 +3,42 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
-import { Kanit, Podkova } from "next/font/google";
+import { Kanit } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 import { Providers } from "./providers";
-import useSessionStorageState from "use-session-storage-state";
-const inter = Kanit({
+import { useSessionStorage } from 'usehooks-ts';
+
+import { LangProvider } from "@/context/languageContext";
+import { Suspense } from "react";
+import Loading from "./loading";
+const kanit = Kanit({
   subsets: ["latin"],
   weight: "400",
 });
-import { LangProvider } from "@/context/languageContext";
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [lang, setLang] = useSessionStorageState("lang", {
-    defaultValue: 'FR',
-  });
+  const [lang, setLang] = useSessionStorage('lang', 
+    'EN'
+  );
   const langContextValue = {
     langs: ["FR", "EN"],
     lang,
     setLang
   };
+  
   return (
-    <html suppressHydrationWarning lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html lang="EN">
+      {}
+
+
       <head />
 
-      <body className={`bg-[#EBEBEB] dark:bg-black ${inter.className}`}>
+      <body className={`bg-[#EBEBEB] dark:bg-black ${kanit.className}`}>
+      <Suspense fallback={<Loading />}>
         <LangProvider value={langContextValue}>
           <Providers>
             <Header />
@@ -44,6 +47,7 @@ export default function RootLayout({
             <ScrollToTop />
           </Providers>
         </LangProvider>
+        </Suspense>
       </body>
     </html>
   );
