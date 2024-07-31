@@ -38,7 +38,7 @@ import './VisionSection.css';
 function VisionSection() {
   const { langs, lang } = useLangContext();
   return (
-    <div id="vision">
+    <div id="vision" className="bg-white">
       {/* <h1 className="text-center text-3xl uppercase font-medium text-primary" >Innovation meets Sustainability</h1> */}
       <p className="vision-text text-primary text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl" >
         {langData[lang].vision_section_1}

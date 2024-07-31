@@ -1,5 +1,5 @@
 "use client"
-
+import { motion } from "framer-motion"
 const Hero = () => {
   return (
     <>
@@ -8,6 +8,20 @@ const Hero = () => {
           <video autoPlay muted loop>
             <source src="Videohero.mp4" type="video/mp4" />
           </video>
+
+
+          {/* <motion.div 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className=" absolute bottom-1/4 text-center text-5xl text-white capitalize font-medium">
+            <motion.h1
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            style={{ x: 100 }}
+            >Innovation meets Sustainability</motion.h1>
+          </motion.div> */}
+
         </div>
         {/* <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg

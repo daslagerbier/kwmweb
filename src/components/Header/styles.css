@@ -23,21 +23,3 @@
   background-color: rgba(201, 1, 30, 0.3) !important; /* c9011e with 30% opacity */
 }
 
-/* Custom styles for Ant Design Modal */
-.custom-modal .ant-modal {
-  top: 0 !important; /* Align to top of the screen */
-  right: 0 !important; /* Align to right of the screen */
-  margin: 0 !important; /* Remove default margin */
-  height: 100vh !important; /* Full height of the viewport */
-  max-height: 100vh !important;
-}
-
-.custom-modal .ant-modal-content {
-  height: 100%; /* Ensure content takes full height */
-  border-radius: 0; /* Remove border radius */
-}
-
-.custom-modal .ant-modal-body {
-  height: 100%; /* Ensure body takes full height */
-  overflow: auto; /* Allow scrolling if content overflows */
-}

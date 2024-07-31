@@ -56,17 +56,20 @@
 .ant-select .ant-select-selection-item {
   font-weight: 600 !important;
 }
-/** @format */
 
 .hero_container {
-  position: relative;
-  overflow: hidden;
+  height: 90vh;
+  padding-bottom: 60vh;
+  padding-top: 0rem;
 }
 
 
 video {
+  position: fixed;
+  object-fit: cover;
   width: 100vw;
-  transform: translate(0, -6vh);
+  transform: translate(0, -10vh);
+  z-index: -9999;
 }
 
 /* Add some content at the bottom of the video/page
@@ -121,32 +124,41 @@ video {
   display: none;
 }
 
+
+
+
 @media (max-width: 837px) {
   .custom-modal{
-    width: 90vw !important; 
+    width: 90vw !important;
+  
     
   }
-
   video {
     object-fit: cover;
     height: 66vh;
     width: 100vw;
   }
+  
 }
 
-@media (min-width: 768px) {
+@media (min-width: 837px) {
  
   .hero_container {
     position: relative;
-    height: 100%;
+    
     overflow: hidden;
   }
-
   .custom-modal{
-    width: 50vw !important;
-    margin-right: 0 !important;
-    scrollbar-width: none !important;
+    width: 66vw !important;
     
+    
+  }
+  @media (min-width: 1200px) {
+    .custom-modal{
+      width: 50vw !important;
+      
+    
+    }
   }
 
   /* Add some content at the bottom of the video/page */

@@ -1,14 +1,23 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useLangContext } from '@/context/languageContext';
+import langData from "../../langs/data.json"
+import dynamic from "next/dynamic";
 
+
+const MyMap = dynamic(() => import("../MyMap/MyMap"), {
+  loading: () => <p>loading...</p>,
+  ssr: false,
+});
 const Footer = () => {
   const currentYear  = new Date().getFullYear();
+  const { lang  } = useLangContext();
   return (
     <>
-      <footer className="relative z-10 bg-white dark:bg-gray-dark md:pt-8 lg:pt-12">
+      <footer className="relative z-10 bg-white dark:bg-gray-dark md:pt-8 lg:pt-16">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="-mx-4 flex flex-wrap justify-center">
             <div className="max-w-[260px] px-2 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[260px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
@@ -113,7 +122,7 @@ const Footer = () => {
                 <ul>
                    <h1
                   className="mb-2 inline-block text-3xl  text-primary duration-300 dark:text-body-color-dark"
-                  > Contact Us !</h1>
+                  > {langData[lang].contact_t0}</h1>
                 {/* <li>
                     <h3
                   
@@ -151,6 +160,9 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
+            <div className=" w-full max-w-xl">
+            <MyMap />
+          </div>
           </div>
 
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>

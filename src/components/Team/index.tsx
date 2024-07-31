@@ -18,7 +18,7 @@ const Team: React.FC = () => {
       job: "Product Manager",
       img: "https://kw-manufacturing.com/wp-content/uploads/2021/09/Meriem-ATTIA.jpg",
     },
-  
+
     {
       name: "Sabrine CHELBI",
       job: "HR Manager",
@@ -27,6 +27,7 @@ const Team: React.FC = () => {
   ];
 
   return (
+    <div className="bg-inherit pb-8">
     <div id="team" className="container">
       {/* <Row justify="center">
         <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]" style={{ padding: "1rem" }}>
@@ -40,13 +41,13 @@ const Team: React.FC = () => {
         
       </Row> */}
       <div className="flex justify-center">
-      <SectionTitle
-      title={langData[lang].team_t0}
-      paragraph={langData[lang].team_d0}
-      center
-      />
+        <SectionTitle
+          title={langData[lang].team_t0}
+          paragraph={langData[lang].team_d0}
+          center
+        />
       </div>
-        
+
 
       <Row gutter={[16, 16]} justify="center" style={{ marginTop: "1rem" }}>
         {teamMembers.map((value, idx) => (
@@ -60,6 +61,7 @@ const Team: React.FC = () => {
           </Col>
         ))}
       </Row>
+    </div>
     </div>
   );
 };

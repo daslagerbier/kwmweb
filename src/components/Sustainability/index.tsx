@@ -43,11 +43,11 @@ const Sustainability = () => {
   const { langs, lang, setLang } = useLangContext();
 
   return (
-    <div id='sustainability' className={`relative w-full h-auto sustainability ${classImg1}`}>
+    <div id='sustainability' className={`relative w-full h-96 sustainability  ${classImg1}`}>
 
-      <div className="absolute bottom-0 left-0 p-2 md:p-4 lg:p-4">
+      <div className="absolute bottom-16 left-4 p-2 md:p-4 lg:p-4">
         <div className="grid gap-4">
-          {/* Dynamic content based on language selection */}
+          
           <div
             className="uppercase relative cursor-pointer text-white text-4xl sm:text-6xl md:text-7xl font-medium transition duration-300 hover:text-red-500"
             onMouseEnter={() => setClassImg1("sustainability-img2")}
@@ -83,16 +83,15 @@ const Sustainability = () => {
         </div>
       </div>
       <Modal
-        className="custom-modal"
+        className="custom-modal  h-full mr-0 top-0 "
         title={hoveredText}
         open={isModalVisible}
         onCancel={handleCancel}
         footer={null}
-        style={{top: 0, width:"80vw!important"}}
         
         
       >
-        <div style={{ height: "100vh" }}>
+        <div>
           {overlayContent}
         </div>
       </Modal>
