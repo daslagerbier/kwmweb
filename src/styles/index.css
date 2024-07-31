@@ -98,7 +98,7 @@ video {
   margin: 0px;
   padding: 0px;
 } */
-} */
+
 
 .sub-content p {
   color: #eee;
@@ -299,14 +299,7 @@ html {
 
 
 
-
-
-
- .overlaysection h2{
-  margin-bottom: 3rem;
-  color: #C9011E;
-  text-transform: uppercase;
-  
+ 
  .overlaysection h2{
   margin-bottom: 3rem;
   color: #C9011E;
@@ -320,10 +313,6 @@ html {
 } 
 
 .overlaysection {
-  margin: 3rem
+  margin: 3rem;
   text-align: justify;
 } 
-
-.overlaysection {
-  margin: 3rem
-}

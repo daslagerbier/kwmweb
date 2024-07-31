@@ -87,7 +87,7 @@ const Sustainability = () => {
         </div>
       </div>
       <Modal
-        className="custom-modal  h-full mr-0 top-0 "
+        className="custom-modal h-screen mr-0 top-0 "
         title={hoveredText}
         open={isModalVisible}
         onCancel={handleCancel}
@@ -95,7 +95,7 @@ const Sustainability = () => {
         
         
       >
-        <div>
+        <div className='h-screen'>
           {overlayContent}
         </div>
       </Modal>

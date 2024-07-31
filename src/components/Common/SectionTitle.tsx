@@ -16,9 +16,9 @@ const SectionTitle = ({
       <div
         className={`w-full ${center ? "mx-auto text-center" : ""}`}
         style={{ maxWidth: width, marginBottom: mb, fontFamily:"kanit"}}
-        style={{ maxWidth: width, marginBottom: mb, fontFamily:"kanit"}}
+        
       >
-        <h2 className="mb-4 text-3xl text-center font-medium !leading-relaxed text-black dark:text-white sm:text-4xl md:text-[45px]">
+      
         <h2 className="mb-4 text-3xl text-center font-medium !leading-relaxed text-black dark:text-white sm:text-4xl md:text-[45px]">
           {title}
         </h2>

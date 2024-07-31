@@ -7,7 +7,7 @@ import { Kanit, Podkova } from "next/font/google";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
 import { Providers } from "./providers";
-import { useSessionStorageState } from "ahooks";
+import useSessionStorageState from "use-session-storage-state";
 const inter = Kanit({
   subsets: ["latin"],
   weight: "400",
