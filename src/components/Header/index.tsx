@@ -85,8 +85,8 @@ const Header = () => {
         }`}
       >
         <div className="container">
-          <div className="relative flex items-center">
-            <div className=" w-60 max-w-full px-4 xl:mr-12">
+          <div className="relative -mx-4 flex items-center justify-between">
+            <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
                 className={`header-logo block w-full ${
@@ -173,17 +173,16 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              
             </div>
-            <div className="flex px-3 items-center  space-x-1 md:space-x-0 rtl:space-x-reverse">
-            <Select
+            <div className="w-60 px-4 xl:mr-12">
+              <Select
+              
                 defaultValue={lang}
                 onChange={(e) => setLang(e)}
                 options={langs.map((lang) => ({
                   value: lang,
                   name: lang,
-                })
-              )}
+                }))}
               />
             </div>
             <button
@@ -207,7 +206,6 @@ const Header = () => {
                 }`}
               />
             </button>
-            
           </div>
         </div>
       </header>
