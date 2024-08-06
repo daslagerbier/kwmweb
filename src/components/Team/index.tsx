@@ -6,7 +6,7 @@ import langData from '../../langs/data.json';
 import { useLangContext } from "@/context/languageContext";
 
 const Team: React.FC = () => {
-  const { langs, lang, setLang } = useLangContext();
+  const {  lang } = useLangContext();
   const teamMembers = [
     {
       name: "Attila KAMAN",

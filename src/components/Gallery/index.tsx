@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
-import { Carousel, Button } from "antd";
-import { LeftOutlined, RightOutlined } from '@ant-design/icons';
-
+import { Carousel } from "antd";
 
 const contentStyle: React.CSSProperties = {
   margin: 0,
@@ -13,18 +11,12 @@ const contentStyle: React.CSSProperties = {
   background: "#364d79",
 };
 
-
 const Gallery = () => {
-  // const prevArrow = (
-  //   <Button type="primary" shape="circle" icon={<LeftOutlined />} style={{fontSize:'60px', top: '50%', left: '20px', transform: 'translateY(-50%)' }}/>
-  // );
-
-  // const nextArrow = (
-  //   <Button type="primary" shape="circle" icon={<RightOutlined />} style={{fontSize:'60px', top: '50%', right: '20px',transform: 'translateY(-50%)' }} />
-  // );
-
   return (
-    <Carousel autoplay arrows={true} prevArrow={<LeftOutlined />} nextArrow={<RightOutlined />}>
+    <Carousel
+      autoplay
+      arrows infinite={true}
+    >
       <div>
         <img
           className="h-screen w-screen object-cover"

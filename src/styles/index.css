@@ -1,5 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@font-face {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kanit/v15/nKKZ-Go6G5tXcraVGwA.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +22,7 @@
 }
 
 @layer components {
-  input[type="checkbox"]:checked~label span svg {
+  input[type="checkbox"]:checked ~ label span svg {
     @apply inline-flex;
   }
 
@@ -25,15 +34,14 @@
     @apply opacity-70;
   }
 
-  input#togglePlan:checked~.dot {
+  input#togglePlan:checked ~ .dot {
     @apply translate-x-full;
   }
 
-  input#checkboxLabel:checked~.box span {
+  input#checkboxLabel:checked ~ .box span {
     @apply opacity-100;
   }
 }
-
 
 .ant-carousel .slick-prev,
 .ant-carousel .slick-prev:hover,
@@ -58,12 +66,9 @@
 }
 
 .hero_container {
-  
   padding-bottom: 60vh;
   padding-top: 0rem;
 }
-
-
 
 video {
   position: fixed;
@@ -99,7 +104,6 @@ video {
   padding: 0px;
 } */
 
-
 .sub-content p {
   color: #eee;
   font-size: 1rem;
@@ -127,46 +131,33 @@ video {
   display: none;
 }
 
-
-
-
 @media (max-width: 837px) {
- 
   .overlaysection {
     margin: 0rem !important;
-  } 
-  
-  
-  .custom-modal{
+  }
+
+  .custom-modal {
     width: 90vw !important;
-  
-    
   }
   video {
     object-fit: cover;
     height: 66vh;
     width: 100vw;
   }
-  
 }
 
 @media (min-width: 837px) {
- 
   .hero_container {
     position: relative;
     height: 80vh;
     overflow: hidden;
   }
-  .custom-modal{
+  .custom-modal {
     width: 66vw !important;
-    
-    
   }
   @media (min-width: 1200px) {
-    .custom-modal{
+    .custom-modal {
       width: 50vw !important;
-      
-    
     }
   }
 
@@ -259,12 +250,8 @@ html {
   z-index: 1000; /* Lower than the overlay's zIndex */
 }
 
-
-
 .sustainability {
   height: 100vh;
-
-
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -273,53 +260,36 @@ html {
   line-height: 2em;
 }
 
-
-.sustainability-img2{
-  
-  background-image: url("/images/gallery/033.jpg"); 
+.sustainability-img2 {
+  background-image: url("/images/gallery/033.jpg");
 }
 
-.sustainability-img3{
-  
-  background-image: url("/images/gallery/014.jpg"); 
+.sustainability-img3 {
+  background-image: url("/images/gallery/014.jpg");
 }
 
-
-.sustainability-img4{
-  
-  background-image: url("/images/gallery/025.jpg"); 
+.sustainability-img4 {
+  background-image: url("/images/gallery/025.jpg");
 }
 
-.sustainability-img5{
-  
-  background-image: url("/images/gallery/028.jpg"); 
+.sustainability-img5 {
+  background-image: url("/images/gallery/028.jpg");
 }
 
-
-
-.sustainability-img1{
-  
+.sustainability-img1 {
   background-image: url("/images/gallery/034.jpg");
 }
 
-
-
-
- 
- .overlaysection h2{
+.overlaysection h2 {
   margin-bottom: 3rem;
-  color: #C9011E;
+  color: #c9011e;
   text-transform: uppercase;
-  
 }
-.overlaysection p{
+.overlaysection p {
   font-size: medium;
   padding: 1rem;
-  
-} 
+}
 
 .overlaysection {
   margin: 3rem;
-  
-} 
-
+}

@@ -1,14 +1,17 @@
-"use client"
-import { motion } from "framer-motion"
+"use client";
+
+import { Suspense } from "react";
+
 const Hero = () => {
   return (
     <>
       <section>
         <div className="hero_container">
-          <video autoPlay muted loop>
-            <source src="Videohero.mp4" type="video/mp4" />
-          </video>
-
+          <Suspense fallback={"loading"}  >
+            <video autoPlay muted loop>
+              <source src="Videohero.mp4" type="video/mp4" />
+            </video>
+          </Suspense>
 
           {/* <motion.div 
             initial={{ opacity: 0 }}
@@ -21,7 +24,6 @@ const Hero = () => {
             style={{ x: 100 }}
             >Innovation meets Sustainability</motion.h1>
           </motion.div> */}
-
         </div>
         {/* <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
