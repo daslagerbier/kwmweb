@@ -13,16 +13,17 @@ import { LangProvider } from "@/context/languageContext";
 import { useSessionStorage } from "usehooks-ts";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useState } from "react";
+import SplashScreen from "@/components/SplashScreen";
 // import Loading from "./loading";
 
 export default function Home() {
   const [lang, setLang] = useSessionStorage("lang", "EN");
-  // const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 2000);
-  // }, []);
+  const [loading, setLoading] = useState(true);
+
+  const finishLoading = () => {
+    setLoading(false);
+  };
   const langContextValue = {
     langs: ["FR", "EN"],
     lang,
@@ -48,7 +49,11 @@ export default function Home() {
             <Footer />
           </>
         )} */}
-        <Header />
+        {loading ? (
+          <SplashScreen finishLoading={finishLoading} />
+        ) : (
+          <>
+            <Header />
             <ScrollUp />
             <Hero />
             <VisionSection />
@@ -58,6 +63,8 @@ export default function Home() {
             <Team />
             <Brands />
             <Footer />
+          </>
+        )}
       </LangProvider>
     </>
   );

@@ -1,4 +1,4 @@
-import { useTheme } from "next-themes";
+/* import { useTheme } from "next-themes";
 
 const ThemeToggler = () => {
   const { theme, setTheme } = useTheme();
@@ -41,3 +41,4 @@ const ThemeToggler = () => {
 };
 
 export default ThemeToggler;
+ */

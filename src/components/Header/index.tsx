@@ -5,12 +5,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useLangContext } from "@/context/languageContext";
-import { Select } from "antd";
-import langData from '../../langs/data.json';
-import './styles.css';
+import langData from "../../langs/data.json";
+import "./styles.css";
+import SingleSelect from "../SingleSelect";
 
 const Header = () => {
-  const { langs, lang, setLang } = useLangContext();
+  const {  lang } = useLangContext();
 
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -73,7 +73,6 @@ const Header = () => {
       path: "#contact",
       newTab: false,
     },
-  
   ];
   return (
     <>
@@ -94,18 +93,11 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/logoKwm2.svg"
+                  src={"/images/logo/logoKwm2.svg"}
                   alt="logo"
                   width={50}
                   height={50}
                   className="dark:hidden"
-                />
-                <Image
-                  src="/images/logo/logoKwm2.svg"
-                  alt="logo"
-                  width={50}
-                  height={50}
-                  className="hidden dark:block"
                 />
               </Link>
             </div>
@@ -125,7 +117,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-3xl font-base capitalize lg:mr-0 lg:inline-flex lg:px-0 lg:py-6${
+                            className={`font-base flex py-2 text-3xl capitalize lg:mr-0 lg:inline-flex lg:px-0 lg:py-6${
                               usePathName === menuItem.path
                                 ? "text-primary dark:text-white"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
@@ -174,21 +166,11 @@ const Header = () => {
                 </nav>
               </div>
             </div>
-            <div className="w-60 px-4 xl:mr-12">
-              <Select
-              
-                defaultValue={lang}
-                onChange={(e) => setLang(e)}
-                options={langs.map((lang) => ({
-                  value: lang,
-                  name: lang,
-                }))}
-              />
-            </div>
+              <SingleSelect />
             <button
               onClick={navbarToggleHandler}
               aria-label="Mobile Menu"
-              className={`rounded-lg px-3 py-[6px]  lg:hidden ${!sticky ? "bg-white bg-opacity-50":""}`}
+              className={`rounded-lg px-3 py-[6px]  lg:hidden ${!sticky ? "bg-white bg-opacity-50" : ""}`}
             >
               <span
                 className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 ${

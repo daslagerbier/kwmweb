@@ -10,8 +10,8 @@ const Brands = () => {
           <div className="w-full px-4">
             <div className="flex flex-wrap items-center justify-center rounded-sm px-8 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]"
             style={{backgroundColor:"white"}}>
-              {brandsData.map((brand) => (
-                <SingleBrand key={brand.id} brand={brand} />
+              {brandsData.map((brand,idx) => (
+                <SingleBrand key={idx} brand={brand} />
               ))}
             </div>
           </div>
